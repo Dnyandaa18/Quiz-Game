@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f5efe6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    font-family: sand-serif;
+}
+
+.container{
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: realtive;
+}
+/* Screens */
+.screen{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+}
+.screen.active{
+    display: block;
+}
+/*Start Screen */
+#start-screen h1{
+    color:rgb(217, 50, 100);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.quiz-header{
+    margin-bottom: 2rem;
+}
+
+#question-text{
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.quiz-info{
+    display: flex;
+    justify-content: center;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.answers-container{  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.answers-btn {
+    background-color: #f8f0e5;
+    color: #333;
+    border: 2px solid #eadbc8;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: left;
+}
+
+.answer-button:hover {
+    background-color: rgb(252, 250, 251);
+    border-color:rgb(220, 213, 215);
+}
+ 
+.answer-btn.correct{
+    background-color:#eadbc8;
+    border-color: white;
+    color: rgb(78, 205, 78);
+}
+.answer-btn.incorrect{
+    background-color:#eadbc8;
+    border-color: white;
+    color: rgb(202, 61, 61);
+}
+
+.progress-bar{
+    height: 10px;
+    background-color: #eadbc8;
+    border-radius: 5px;
+    overflow: hidden; 
+    margin-top: 20px;
+}
+
+.progress{
+    height: 100px;
+    background-color: rgb(210, 83, 51);
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+/*Result Screen*/
+#result-screen h1 {
+    color: pink;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.result-info p{
+    font-color: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;  
+}
+
+# 
