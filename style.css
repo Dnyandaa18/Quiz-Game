@@ -11,7 +11,7 @@ body{
     align-items: center;
     min-height: 100vh;
     padding: 1rem;
-    font-family: sand-serif;
+    font-family: sans-serif;
 }
 
 .container{
@@ -21,7 +21,7 @@ body{
     width: 100%;
     max-width: 600px;
     overflow: hidden;
-    position: realtive;
+    position: relative;
 }
 /* Screens */
 .screen{
@@ -149,7 +149,7 @@ button:hover{
 }
 
 /* Responsive Design*/
-@media (max-width:px){
+@media (max-width: 500px){
     /* When we hit 500px and below, implement the styles below*/
 .screen{
     padding: 1rem;
