@@ -89,7 +89,7 @@ function showQuestion(){
     answersDisabled = false;
     const currentQuestion = quizQuestions[currentQuestionIndex];
     currentQuestionSpan.textContent = currentQuestionIndex + 1;
-    const progressPercent = (currentQuestionIndex / quizQuestions.lentgh) * 100;
+    const progressPercent = (currentQuestionIndex / quizQuestions.length) * 100;
     progressBar.style.width = progressPercent + "%";
     questionText.textContent = currentQuestion.question;
     answersContainer.innerHTML = "";
@@ -112,12 +112,12 @@ function selectAnswer(event){
   const selectedButton = event.target;
   const isCorrect = selectedButton.dataset.correct === "true";
 
-  Array.from(answersContainer.childern).forEach((button) =>{
+  Array.from(answersContainer.children).forEach((button) =>{
     if (button.dataset.correct === "true"){
       button.classList.add("correct");
     }
     else if(button === selectedButton){
-      button.classList.add("Incorrect");
+      button.classList.add("incorrect");
     }   
    });
 
@@ -137,7 +137,7 @@ function selectAnswer(event){
     }
    },1000);
 }
-function showReults(){
+function showResults(){
   quizScreen.classList.remove("active");
   resultScreen.classList.add("active");
 
@@ -162,6 +162,6 @@ function showReults(){
 }
 function restartQuiz(){
     resultScreen.classList.remove("active");
-    
+
     startQuiz();
 }
