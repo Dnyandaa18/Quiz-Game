@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(254, 231, 243);
 }
 body{
     background: #f5efe6;
@@ -60,7 +59,7 @@ body{
 
 .quiz-info{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     color: #666;
     margin-bottom: 10px;
 }
